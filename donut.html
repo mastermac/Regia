@@ -106,6 +106,7 @@ pieSeries.slices.template.tooltipText = "";
 
 // Add a legend
 chart.legend = new am4charts.Legend();
+            chart.legend.valueLabels.template.text = "{category}: {value.value}";
         }
         document.addEventListener("DOMContentLoaded", showGraph);
     </script>
