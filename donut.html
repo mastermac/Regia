@@ -14,7 +14,7 @@
         /* clearfix */
         #chartdiv {
           width: 100%;
-          height: 500px;
+          height: 200px;
         }
         .clear:before,
         .clear:after {
@@ -71,13 +71,16 @@ var chart = am4core.create("chartdiv", am4charts.PieChart);
 // Add data
 chart.data = [ {
   "country": "Completed",
-  "litres": params['completed']
+  "litres": params['completed'],
+  "color": "#CE1126"
 }, {
   "country": "Started",
-  "litres": params['started']
+  "litres": params['started'],
+  "color": "#F2AF00"
 }, {
   "country": "NotStarted",
-  "litres": params['not']
+  "litres": params['not'],
+  "color": "#6EA204"
 } ];
 
 // Set inner radius
