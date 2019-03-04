@@ -61,6 +61,8 @@
             
             am4core.useTheme(am4themes_material);
 am4core.useTheme(am4themes_animated);
+            
+
 // Themes end
 
 // Create chart instance
@@ -79,10 +81,10 @@ chart.data = [ {
 } ];
 
 // Set inner radius
-chart.innerRadius = am4core.percent(50);
-
+chart.innerRadius = am4core.percent(30);
+chart.responsive.enabled = true;
 // Add and configure Series
-var pieSeries = chart.series.push(new am4charts.PieSeries());
+var pieSeries = chart.series.push(new am4charts.PieSeries());            
 pieSeries.dataFields.value = "litres";
 pieSeries.dataFields.category = "country";
 pieSeries.slices.template.stroke = am4core.color("#fff");
